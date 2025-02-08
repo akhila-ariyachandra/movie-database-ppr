@@ -30,6 +30,7 @@ export default tseslint.config(
           fixStyle: "inline-type-imports",
         },
       ],
+      "@typescript-eslint/require-await": "off",
     },
   },
   compat.config({
