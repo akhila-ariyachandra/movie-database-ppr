@@ -2,5 +2,8 @@
   "editor.formatOnSave": true,
   "notebook.defaultFormatter": "esbenp.prettier-vscode",
   "typescript.tsdk": "node_modules\\typescript\\lib",
-  "eslint.lintTask.options": "--cache"
+  "eslint.lintTask.options": "--cache",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
 }
