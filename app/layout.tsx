@@ -14,7 +14,9 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="container mx-auto max-w-screen-xl antialiased">
+        {children}
+      </body>
     </html>
   );
 };
