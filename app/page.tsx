@@ -17,11 +17,17 @@ const Home = async () => {
         movies={popularMovies.map((movie) => ({
           id: movie.id,
           title: movie.title,
-          posterPath: getImageUrl(configuration, movie.poster_path, "original"),
+          posterPath: getImageUrl(
+            configuration,
+            movie.poster_path,
+            "poster",
+            "w500",
+          ),
           backdropPath: getImageUrl(
             configuration,
             movie.backdrop_path,
-            "original",
+            "backdrop",
+            "w1280",
           ),
           voteAverage: movie.vote_average,
           releaseDate: movie.release_date,

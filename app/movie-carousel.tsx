@@ -32,7 +32,7 @@ const MovieCarousel = ({
   return (
     <Carousel className="relative mx-auto w-full max-w-7xl" setApi={setApi}>
       <CarouselContent>
-        {movies.map((movie) => (
+        {movies.map((movie, index) => (
           <CarouselItem key={movie.id}>
             <Link href={`/movie/${movie.id}/${slugify(movie.title)}`}>
               <Card className="cursor-pointer border-0">
@@ -42,6 +42,8 @@ const MovieCarousel = ({
                     alt={movie.title}
                     fill
                     className="object-cover"
+                    unoptimized={index !== 0} // Only optimize the first image
+                    priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
 
