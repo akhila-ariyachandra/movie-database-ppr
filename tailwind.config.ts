@@ -1,3 +1,4 @@
+import forms from "@tailwindcss/forms";
 import type { Config } from "tailwindcss";
 import animate from "tailwindcss-animate";
 
@@ -59,5 +60,5 @@ export default {
       },
     },
   },
-  plugins: [animate],
+  plugins: [animate, forms],
 } satisfies Config;
